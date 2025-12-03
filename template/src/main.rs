@@ -4,7 +4,7 @@ use std::{
 };
 
 fn main() {
-    let file = File::open("input.txt").unwrap();
+    let file = File::open("test.txt").unwrap();
     let values: Vec<String> = io::BufReader::new(file)
         .lines()
         .map(|x| x.unwrap())
